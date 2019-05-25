@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
+import aboutMeData from './Data/aboutMeData';
 export default class About extends Component {
   render() {
-    let resumeData = this.props.resumeData;
+    let resumeData = aboutMeData;
     return (
       <section id="about">
          <div className="row">

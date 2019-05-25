@@ -31,6 +31,8 @@ export default class Header extends Component {
               <li><a className="smoothscroll" href="#contact">Contact</a></li>
             </ul>
           </nav>
+
+          <h1>Hello</h1>
         </header>
      </div>
     );
