@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 
 import aboutMeData from './Data/aboutMeData';
+import   './About.css'
 export default class About extends Component {
   render() {
-    let resumeData = aboutMeData;
+    let aboutMe = aboutMeData;
     return (
       <section id="about">
          <div className="row">
 
             <div className="three columns">
 
-               <img className="profile-pic"  src="images/profilepic.jpg" alt="" />
+               <img className="profile-pic"  src={aboutMe.image} alt="" />
 
             </div>
 
@@ -19,7 +20,7 @@ export default class About extends Component {
                <h2>About Me</h2>
                <p>
                {
-                 resumeData.aboutme
+                 aboutMe.aboutme
                }
                </p>
 
@@ -29,13 +30,15 @@ export default class About extends Component {
 
                   <h2>Contact Details</h2>
                   <p className="address">
-       						<span>{resumeData.name}</span>
+       						<span>{aboutMe.name}</span>
                      <br></br>
        						   <span>
-                     {resumeData.address}
+                     {aboutMe.address}
                     </span>
                     <br></br>
-                    <span>{resumeData.website}</span>
+                    <span>{aboutMe.website}</span>
+                    <p> {aboutMe.email}</p>
+                   
        					   </p>
                   </div>
                </div>
